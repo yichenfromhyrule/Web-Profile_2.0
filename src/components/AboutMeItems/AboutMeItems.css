@@ -1,0 +1,38 @@
+.about_photo {
+    float: left;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_text {
+    float: left;
+    width: 60%;
+    align-items: center;
+    background: transparent;
+}
+
+.about_item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.about_container:after {
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .about_photo {
+        width: 100%;
+    }
+    .about_text {
+        width: 100%;
+    }
+}
