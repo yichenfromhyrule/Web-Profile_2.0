@@ -8,10 +8,10 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          I just have no idea why I need this part, but you can send me an email through here. 
         </p>
         <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+          You can also ignore this part.
         </p>
         <div className='input-areas'>
           <form>
@@ -21,26 +21,25 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <button><a href="mailto:yichenfrom2020@gmail.com">Contact Me</a></button>
           </form>
         </div>
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Contact Me</h2>
+            <h2>Address</h2>
             <p>3751 Nickel Way,</p>
             <p>Buffalo, NY 14228</p>
             <p>United State</p>
-            <p>yichenfrom2020@gmail.com</p>
           </div>
         </div>
         <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+          <div class='footer-link-items-2'>
             <h2>Social Media</h2>
-            <a href="https://www.instagram.com/jambako_o/?hl=en" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/yichen19951211/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yichenfromhyrule" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/jambako_o/?hl=en" rel="noopener noreferrer" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/yichen19951211/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yichenfromhyrule" rel="noopener noreferrer" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -48,52 +47,40 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+              YICHEN
+              <div class="divider"></div>
+              <i class='fab fa-fort-awesome-alt' />
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>yichen © 2020</small>
           <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
+            <a
               class='social-icon-link instagram'
-              to='/'
+              href="https://www.instagram.com/jambako_o/?hl=en"
+              rel="noopener noreferrer"
               target='_blank'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
+              href="https://www.linkedin.com/in/yichen19951211/"
+              rel="noopener noreferrer"
               target='_blank'
               aria-label='LinkedIn'
             >
               <i class='fab fa-linkedin' />
-            </Link>
+            </a>
+            <a
+              class='social-icon-link facebook'
+              href="https://github.com/yichenfromhyrule"
+              rel="noopener noreferrer"
+              target='_blank'
+              aria-label='Facebook'
+            >
+              <i class="fab fa-github" />
+            </a>
           </div>
         </div>
       </section>

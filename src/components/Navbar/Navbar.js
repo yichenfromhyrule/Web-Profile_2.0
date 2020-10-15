@@ -33,7 +33,8 @@ function Navbar() {
             className="navbar-logo"
             onClick = {closeMobileMenu}
           >
-            Test 
+            YICHEN
+            <div className='nav-divider' />  
             <i className='fab fa-fort-awesome-alt' />
           </Link>
           <div className='menu-icon' onClick = {handleClick}>
@@ -49,36 +50,23 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link 
-                to='/blog' 
-                className='nav-links' 
-                onClick={closeMobileMenu}
-              >
-                Blog
-              </Link>
-            </li>
-            <li className='nav-item'>
+            
+
+            <li>
               <Link 
                 to='/about-me' 
-                className='nav-links' 
+                className='nav-links-mobile' 
                 onClick={closeMobileMenu}
               >
                 About Me
               </Link>
             </li>
-
-            <li>
-              <Link 
-                to='/sign-up' 
-                className='nav-links-mobile' 
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && 
+          <Button buttonStyle='btn--outline'>
+              About Me
+            </Button>
+          }
         </div>
       </nav>
     </>

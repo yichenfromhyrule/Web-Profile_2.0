@@ -1,16 +1,14 @@
 import React from 'react';
 import '../../App.css';
-import Cards from '../Card/Cards';
 import ProductSection from '../ProductSection/ProductSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
+import { homeObjOne, homeObjTwo} from './Data';
 
 export default function Blog() {
     return (
         <div>
-            <h1 className='blog'>Blog</h1>
-            <Cards />
+            <h1 className='blog'>Products</h1>
             <ProductSection {...homeObjOne} />
-            <ProductSection {...homeObjThree} />
+            <ProductSection {...homeObjTwo} />
         </div>
     ) 
 }

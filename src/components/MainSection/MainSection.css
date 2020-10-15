@@ -7,8 +7,9 @@ video {
   }  
 
 .main-container {
-    /*background: url('images/main.jpg') center center/cover no-repeat;*/
+  background: url('/images/Game/ac_1.jpg') center center/cover no-repeat;
   height: 100vh;
+  
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,14 +21,15 @@ video {
 
 .main-container > h1 {
   color: #fff;
-  font-size: 100px;
-  margin-top: -100px;
+  font-size: 80px;
+  margin-top: 50px;
 }
 
 .main-container > p {
   margin-top: 8px;
+  text-align: center;
   color: #fff;
-  font-size: 32px;
+  font-size: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
@@ -57,7 +59,8 @@ video {
         margin-top: -100px;
     }
     .main-container > p {
-        font-size: 30px;
+        font-size: 20px;
+        text-align: center;
     }
     .btn-mobile {
         display: block;

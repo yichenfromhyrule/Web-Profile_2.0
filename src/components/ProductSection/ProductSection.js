@@ -1,7 +1,6 @@
 import React from 'react';
 import './ProductSection.css';
-import { Button } from '../Button/Button';
-import { Link } from 'react-router-dom';
+
 
 function ProductSection({
   lightBg,
@@ -13,7 +12,9 @@ function ProductSection({
   buttonLabel,
   img,
   alt,
-  imgStart
+  imgStart,
+  linkto,
+  buttonName
 }) {
   return (
     <>
@@ -43,9 +44,12 @@ function ProductSection({
                 >
                   {description}
                 </p>
-                <Link to='/sign-up'>
-                    <Button buttonStyle='btn--outline--reverse'>SIGN UP</Button>
-                </Link>
+                <a href={linkto}
+                rel="noopener noreferrer" 
+                target='_blank'
+                >
+                <button>{buttonName}</button>
+                </a>
               </div>
             </div>
             <div className='col'>

@@ -2,7 +2,7 @@
     --primary: #fff;
   }
   
-  .btn {
+.btn {
     padding: 8px 20px;
     border-radius: 2px;
     outline: none;
@@ -10,13 +10,13 @@
     cursor: pointer;
   }
   
-  .btn--primary {
+.btn--primary {
     background-color: var(--primary);
     color: #242424;
     border: 1px solid var(--primary);
   }
   
-  .btn--outline {
+.btn--outline {
     background-color: transparent;
     color: #fff;
     padding: 8px 20px;
@@ -24,26 +24,62 @@
     transition: all 0.3s ease-out;
   }
 
-  .btn--outline-reverse {
+.btn--outline-reverse {
     background-color: white;
     color: black;
     border: 2px solid #555555;
+    width: 60%;
+    max-width: 60%;
   }
   
-  .btn--medium {
+.btn--medium {
     padding: 8px 20px;
     font-size: 18px;
   }
   
-  .btn--large {
+.btn--large {
     padding: 12px 26px;
     font-size: 20px;
   }
   
-  .btn--large:hover,
-  .btn--medium:hover {
+.btn--large:hover,
+.btn--medium:hover {
     transition: all 0.3s ease-out;
     background: #fff;
     color: #242424;
     transition: 250ms;
   }
+
+.btn--outline-reverse:hover {
+    background-color: pink;
+  }
+
+  button {
+    border: 2px solid pink;
+    background: pink;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 10px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+  
+button:after {
+    content: '';
+      display: block;
+      position: absolute;
+      top: -36px;
+      left: -100px;
+      background: white;
+      width: 50px;
+      height: 125px;
+      opacity: 20%;
+      transform: rotate(-45deg);
+}
+  
+button:hover:after {
+    left: 120%;
+    transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+     -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+}
