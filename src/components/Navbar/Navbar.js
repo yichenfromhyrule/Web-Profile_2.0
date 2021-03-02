@@ -28,12 +28,14 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
+          <div className="navbar-left-col" />
+        
           <Link 
             to="/" 
             className="navbar-logo"
             onClick = {closeMobileMenu}
           >
-            YICHEN
+            LOGO
             <div className='nav-divider' />  
             <i className='fab fa-fort-awesome-alt' />
           </Link>
