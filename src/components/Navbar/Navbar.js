@@ -29,7 +29,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <div className="navbar-left-col" />
+          <div className="navbar-container-margin-left" />
           <Link 
             to="/" 
             className="navbar-logo"
@@ -38,7 +38,44 @@ function Navbar() {
             <img src={logo} alt="Logo" height="70px" width="auto" />
             <div className='nav-divider' />
           </Link>
-          <div className="navbar-left-col" />
+          <ul className="navbar-menu-left">
+            <li className="navbar-menu-items">
+              <Link 
+                to='/' 
+                className='nav-links' 
+                onClick={closeMobileMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="navbar-menu-items">
+              <Link 
+                to='/' 
+                className='nav-links' 
+                onClick={closeMobileMenu}
+              >
+                Tool1
+              </Link>
+            </li>
+            <li className="navbar-menu-items">
+              <Link 
+                to='/' 
+                className='nav-links' 
+                onClick={closeMobileMenu}
+              >
+                Tool2
+              </Link>
+            </li>
+            <li className="navbar-menu-items">
+              <Link 
+                to='/' 
+                className='nav-links' 
+                onClick={closeMobileMenu}
+              >
+                About
+              </Link>
+            </li>
+          </ul>
         </div>
       </nav>
     </>
