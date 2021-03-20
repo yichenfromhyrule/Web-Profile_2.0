@@ -6,9 +6,9 @@
 }
 
 .home,
-.blog,
-.about-me,
-.sign-up {
+.algorithms,
+.digitalpainting,
+.about {
   display: flex;
   flex-direction: row;
   height: 90vh;
@@ -19,24 +19,6 @@
 
 .blog {
   background-image: url('/images/Game/ac_1.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.about-me {
-  background-image: url('/images/Game/ac_5.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-image: url('/images/Game/ac_6.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

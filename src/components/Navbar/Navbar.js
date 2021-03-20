@@ -1,85 +1,26 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../Button/Button';
 import './Navbar.css';
-import logo from '../../images/logo/LOGO.png';
+import {SidebarData} from './SidebarData';
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-      if(window.innerWidth <= 960){
-          setButton(false)
-      } else {
-          setButton(true);
-      }
-  };
-
-  useEffect(() => {
-      showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton);
-
-  return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <div className="navbar-container-margin-left" />
-          <Link 
-            to="/" 
-            className="navbar-logo"
-            onClick = {closeMobileMenu}
-          >
-            <img src={logo} alt="Logo" height="70px" width="auto" />
-            <div className='nav-divider' />
-          </Link>
-          <ul className="navbar-menu-left">
-            <li className="navbar-menu-items">
-              <Link 
-                to='/' 
-                className='nav-links' 
-                onClick={closeMobileMenu}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="navbar-menu-items">
-              <Link 
-                to='/' 
-                className='nav-links' 
-                onClick={closeMobileMenu}
-              >
-                Tool1
-              </Link>
-            </li>
-            <li className="navbar-menu-items">
-              <Link 
-                to='/' 
-                className='nav-links' 
-                onClick={closeMobileMenu}
-              >
-                Tool2
-              </Link>
-            </li>
-            <li className="navbar-menu-items">
-              <Link 
-                to='/' 
-                className='nav-links' 
-                onClick={closeMobileMenu}
-              >
-                About
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
-  );
+    return (
+        <>
+            <nav className='nav-menu'>
+                <ul className='nav-menu-items'>
+                    {SidebarData.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Link to={item.path}>
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </nav>
+        </>
+    )
 }
 
-export default Navbar;
+export default Navbar
