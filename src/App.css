@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
+
+}
+
+.ycPage {
+  display: flex;
+  flex-direction: row;
+  float: right;
 }
 
 .home,
@@ -11,10 +18,12 @@
 .about {
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: 100vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  background-color: thistle;
 }
 
 .blog {
