@@ -10,7 +10,7 @@ function Home() {
   };
   return (
     <div>
-      <div className='sliderContainer'>
+      <div>
         <Slider {...sliderSettings}>
           <div>
             <h3>1</h3>

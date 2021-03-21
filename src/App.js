@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
@@ -10,26 +10,23 @@ import About from './pages/About';
 
 function App() {
   return (
-    <Container>
+    <div class='some-page-wrapper'>
       <Router>
-        <Row>
-          <Col xs lg="3">
-            <Navbar />
-          </Col>
-          <Col xs lg="9">
-            <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/algorithms' component={Algorithms} />
-              <Route path='/digitalpainting' component={DigitalPainting} />
-              <Route path='/about' component={About} />
-            </Switch>
-          </Col>
-        </Row>
-        
-        
+      <div class='row'>
+        <div class='columnNavbar'>
+          <Navbar />
+        </div>
+        <div class='columnContent'>
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/algorithms' component={Algorithms} />
+            <Route path='/digitalpainting' component={DigitalPainting} />
+            <Route path='/about' component={About} />
+          </Switch>
+        </div>
+      </div>
       </Router>
-      
-    </Container>  
+    </div>
   );
 }
 
