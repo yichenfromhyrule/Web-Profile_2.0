@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'infinite-react-carousel';
 import './Home.css';
+import HomeSlider from './../components/HomeSlider/HomeSlider';
 
 
 function Home() {
@@ -13,13 +14,17 @@ function Home() {
       <div>
         <Slider {...sliderSettings}>
           <div>
-            <h3>1</h3>
+            <HomeSlider />
           </div>
           <div>
-            <h3>2</h3>
+            <div className='sliderComponent1'>
+              <h3>2</h3>
+            </div>
           </div>
           <div>
-            <h3>3</h3>
+            <div className='sliderComponent1'>
+              <h3>3</h3>
+            </div>
           </div>
         </Slider>
       </div>
