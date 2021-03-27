@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'infinite-react-carousel';
 import './Home.css';
 import HomeSlider from './../components/HomeSlider/HomeSlider';
+import image1 from './../images/sliderImg/image1.jpg';
 
 
 function Home() {
@@ -14,7 +15,9 @@ function Home() {
       <div>
         <Slider {...sliderSettings}>
           <div>
-            <HomeSlider />
+            <HomeSlider 
+            image = {image1}
+            />
           </div>
           <div>
             <div className='sliderComponent1'>
