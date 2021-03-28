@@ -17,6 +17,8 @@ function Home() {
           <div>
             <HomeSlider 
             image = {image1}
+            linkTo = '/algorithms'
+            title = "Algorithms"
             />
           </div>
           <div>

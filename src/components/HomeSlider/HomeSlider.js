@@ -1,13 +1,15 @@
 import React from 'react';
 import './HomeSlider.css';
-import image1 from './../../images/sliderImg/image1.jpg';
+import {Link } from "react-router-dom";
 
 function HomeSlider(props) {
     return (
         <div className="sliderComponent" style={{backgroundImage:`url(${props.image})`}}>
-            <div >
-                <h1>Hahaha</h1>
-            </div>
+            <Link to={props.linkTo}>
+                <button className="button" >
+                    {props.title}
+                </button>
+            </Link>
         </div>
     )
 }
