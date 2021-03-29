@@ -22,14 +22,18 @@ function Home() {
             />
           </div>
           <div>
-            <div className='sliderComponent1'>
-              <h3>2</h3>
-            </div>
+            <HomeSlider 
+            image = {image1}
+            linkTo = '/digitalpainting'
+            title = "Digital Painting"
+            />
           </div>
           <div>
-            <div className='sliderComponent1'>
-              <h3>3</h3>
-            </div>
+            <HomeSlider 
+            image = {image1}
+            linkTo = '/about'
+            title = "About"
+            />
           </div>
         </Slider>
       </div>
