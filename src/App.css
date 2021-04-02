@@ -32,18 +32,26 @@
   float: right;
 }
 
-.home,
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
+  background-color: white;
+}
+
 .algorithms,
 .digitalpainting,
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  background-color: thistle;
+  background-color: white;
 }
 
 .blog {

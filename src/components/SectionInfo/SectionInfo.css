@@ -1,0 +1,9 @@
+.sectionTitle {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 25px;
+}

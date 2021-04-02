@@ -3,6 +3,7 @@ import Slider from 'infinite-react-carousel';
 import './Home.css';
 import HomeSlider from './../components/HomeSlider/HomeSlider';
 import image1 from './../images/sliderImg/image1.jpg';
+import SectionInfo from './../components/SectionInfo/SectionInfo';
 
 
 function Home() {
@@ -38,6 +39,7 @@ function Home() {
         </Slider>
       </div>
       <div className='home'>
+        <SectionInfo />
         <h1>Home</h1>
       </div>
     </div>
