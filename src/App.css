@@ -35,10 +35,9 @@
 .home {
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 100%;
   font-size: 3rem;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .algorithms,
@@ -51,7 +50,7 @@
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  background-color: white;
+  background-color: #F5CEC7;
 }
 
 .blog {

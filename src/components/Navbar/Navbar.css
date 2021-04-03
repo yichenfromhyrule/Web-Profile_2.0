@@ -1,5 +1,5 @@
 .nav-menu {
-    background-color: #5b66a7;
+    background-color: #C6C09C;
     height: 100vh;
     width:auto;
     display: flex;
@@ -35,7 +35,7 @@
 }
   
 .nav-text a:hover {
-    background-color: #27476b;
+    background-color: #FFB284;
 }
   
 .menu-bars {
@@ -43,4 +43,7 @@
     font-size: 2rem;
     background: none;
 }
-  
+
+p {
+    font-family: "Comic Sans MS", "Comic Sans", "cursive";
+}

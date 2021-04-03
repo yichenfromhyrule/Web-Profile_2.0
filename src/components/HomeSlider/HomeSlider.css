@@ -2,9 +2,9 @@
     height: 200px;
 }
 .button {
-    background-color: rgba(255, 255, 255, 0.438); /* Green */
+    background-color: #C6C09C; /* Green */
     border: none;
-    color: black;
+    color: white;
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
@@ -17,10 +17,12 @@
     margin-right: 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 2px solid #e7e7e7;
+    border: 2px solid #C6C09C;
     border-radius: 5px;
+    font-family: "Comic Sans MS", "Comic Sans", "cursive";
 }
 
 .button:hover {
-    background-color: #e7e7e7;
+    background-color: #FFB284;
+    border: 2px solid #FFB284;
 }

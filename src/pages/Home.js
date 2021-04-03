@@ -39,8 +39,14 @@ function Home() {
         </Slider>
       </div>
       <div className='home'>
-        <SectionInfo />
-        <h1>Home</h1>
+        <SectionInfo 
+          title = "Algorithms"
+          description = "some description"
+        />
+        <SectionInfo 
+          title = "Digital Paintings"
+          description = "some description"
+        />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ function Navbar() {
                         return (
                             <li key={index} className={item.cName}>
                                 <Link to={item.path}>
-                                    <span>{item.title}</span>
+                                    <p>{item.title}</p>
                                 </Link>
                             </li>
                         );

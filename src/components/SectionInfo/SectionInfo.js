@@ -1,12 +1,17 @@
 import React from 'react';
 import './SectionInfo.css';
+import SubSection from './SubSection/SubSection';
 
-function SectionInfo() {
+function SectionInfo(props) {
     return (
-        <div>
+        <div className="container">
             <div className="sectionTitle">
-                <p> Algorithm </p>
+                <p> {props.title} </p>
             </div>
+            <div className="sectionInfo">
+                <p> {props.description} </p>
+            </div>
+            <SubSection />
         </div>
     )
 }
